@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  postgres:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-04-24T16:37:50.626213756Z"
+    description: A Helm chart for Postgres databas with a server.
+    digest: 7ffaae883e3449ecdd2180df05e4df9641ca675aab040740df08a476f1378ffe
+    name: postgres
+    type: application
+    urls:
+    - https://github.com/runstache/helm-charts/releases/download/postgres-0.2.0/postgres-0.2.0.tgz
+    version: 0.2.0
+generated: "2022-04-24T16:37:50.626218856Z"
