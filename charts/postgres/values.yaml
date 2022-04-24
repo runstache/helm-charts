@@ -10,11 +10,11 @@ service:
   type: LoadBalancer
 
 database:
-  name: 
-  user:
-  password:
+  name: postgres
+  user: admin
+  password: password
   port: 5432
-  data: 
+  data: /var/folders/db-data
 resources:
   limits:
     cpu: 500m
