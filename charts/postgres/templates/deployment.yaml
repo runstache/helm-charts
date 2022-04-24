@@ -30,9 +30,9 @@ spec:
             - name: POSTGRES_DB
               value: {{ .Values.database.name }}
             - name: POSTGRES_USER
-              value: {{ .Value.database.user }}
+              value: {{ .Values.database.user }}
             - name: POSTGRES_PASSWORD
-              value: {{ .Value.database.password }}
+              value: {{ .Values.database.password }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMount:
