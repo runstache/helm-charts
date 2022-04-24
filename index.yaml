@@ -3,6 +3,16 @@ entries:
   postgres:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-04-24T16:49:52.623670037Z"
+    description: A Helm chart for Postgres databas with a server.
+    digest: aaaa9625a08074a41b2f0144e75308dd5bcead504e76d88b5b5d6f657fb221c6
+    name: postgres
+    type: application
+    urls:
+    - https://github.com/runstache/helm-charts/releases/download/postgres-0.4.0/postgres-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-04-24T16:46:06.360725496Z"
     description: A Helm chart for Postgres databas with a server.
     digest: d1981766340f250ac4b4995f78327b95cf7780d9052b9dfad98cb9b3a862cb0d
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://github.com/runstache/helm-charts/releases/download/postgres-0.2.0/postgres-0.2.0.tgz
     version: 0.2.0
-generated: "2022-04-24T16:46:06.36098971Z"
+generated: "2022-04-24T16:49:52.623682037Z"
