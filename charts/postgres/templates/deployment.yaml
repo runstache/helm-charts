@@ -42,5 +42,5 @@ spec:
         - name: data
           hostPath:
             path: {{ .Values.database.data }}
-            type: Directory
+            type: DirectoryOrCreate
           

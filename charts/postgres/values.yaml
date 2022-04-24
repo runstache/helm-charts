@@ -14,7 +14,7 @@ database:
   user: admin
   password: password
   port: 5432
-  data: /var/folders/db-data
+  data: /var/folders/db-data/
 resources:
   limits:
     cpu: 500m
