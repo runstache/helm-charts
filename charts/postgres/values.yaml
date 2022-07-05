@@ -14,7 +14,6 @@ database:
   user: admin
   password: password
   port: 5432
-  data: /var/folders/db-data/
 resources:
   limits:
     cpu: 500m
@@ -22,3 +21,9 @@ resources:
   requests:
     cpu: 100m
     memory: 512Mi
+storage:
+  enabled: true
+  class: longhorn
+  name: postgres-db-store
+  request: 2Gi
+

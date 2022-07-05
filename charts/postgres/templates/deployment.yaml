@@ -35,11 +35,15 @@ spec:
               value: {{ .Values.database.password }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          {{- if .Values.storage.enabled }}
           volumeMounts:
             - name: data
               mountPath: /var/lib/postgresql/data
+          {{- end }}
+      {{- if .Values.storage.enabled }}
       volumes:
         - name: data
-          hostPath:
-            path: {{ .Values.database.data }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.storage.name }}
+      {{- end }}
             

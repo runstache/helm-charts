@@ -1,6 +1,6 @@
 # Postgres Database Chart
 
-Helm Chart to deploy a Postgres Database Server to a local Kubernetes cluster.
+Helm Chart to deploy a Postgres Database Server to a Kubernetes cluster.
 
 ## Resources
 
@@ -8,6 +8,7 @@ The chart will deploy the followings resources:
 
 * Kubernetes Deployment
 * Kubernetes Service
+* Kubernetes Persistent Volumn Claim
 
 ## Values
 
@@ -26,3 +27,7 @@ The values available for Helm deployment are as follows:
 * __resources.requests.memory__: Specifies the initial resource request for Memory resources (default: 512Mi)
 * __resources.limits.cpu__: Specifies the limit for CPU usage. (default: 500m)
 * __resources.limits.memory__: Specifies the limit for Memory usage. (default: 1Gi)
+* __storage.enabled__: Denotes to create a new Persistent Volume Claim (default: True)
+* __storage.class__: Denotes the storage class for the PVC (default:longhorn)
+* __storage.name__: Name of the PVC to be created
+* __storage.request__: Initial size of the PVC (default: 2Gi)
