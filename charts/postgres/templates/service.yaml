@@ -11,5 +11,6 @@ spec:
       targetPort: postgres
       protocol: TCP
       name: postgres
+      nodePort: {{ .Values.service.outport }}
   selector:
     {{- include "postgres.selectorLabels" . | nindent 4 }}
