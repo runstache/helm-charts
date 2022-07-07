@@ -3,8 +3,8 @@ kind: ConfigMap
 metadata:
   name: {{ include "rss-reader.fullname" . }}
 data:
-    APP_BILL_PREFIX: {{ .Values.application.billprefix }}
-    DB_PLATFORM: {{ .Values.application.database.platform }}
-    DB_URL: {{ .Values.application.database.url }}
-    ACTIVE_PROFILE: {{ .Values.application.profile }}
-    APP_POLL_INTERVAL: {{ .Values.application.pollinterval }}
+    APP_BILL_PREFIX: {{ .Values.application.billprefix | quote }}
+    DB_PLATFORM: {{ .Values.application.database.platform | quote }}
+    DB_URL: {{ .Values.application.database.url | quote }}
+    ACTIVE_PROFILE: {{ .Values.application.profile | quote }}
+    APP_POLL_INTERVAL: {{ .Values.application.pollinterval | quote }}
