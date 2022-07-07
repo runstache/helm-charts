@@ -7,3 +7,4 @@ This repository contains Helm Charts for deploying various infrastructure compon
 The following Charts are available:
 
 * __Postgres__: Deploys a Postgres Database Server and Service.
+* __Rss Reader__: Java Camel Application that retrieves House and Senate Bill information from PA RSS Feeds.

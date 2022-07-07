@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "rss-reader.fullname" . }}
+  labels:
+    {{- include "rss-reader.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: jmx
+      nodePort: {{ .Values.service.nodeport}}
+  selector:
+    {{- include "rss-reader.selectorLabels" . | nindent 4 }}
