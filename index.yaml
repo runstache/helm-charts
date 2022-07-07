@@ -104,6 +104,16 @@ entries:
   rss-reader:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-07-07T22:34:08.834916316Z"
+    description: A Helm chart for Kubernetes
+    digest: 4381c93ab98c34b3c94d7e90faa1e69a64ae310e698e8bc8550418319e8a9656
+    name: rss-reader
+    type: application
+    urls:
+    - https://github.com/runstache/helm-charts/releases/download/rss-reader-1.0.2/rss-reader-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-07-07T22:06:34.16563238Z"
     description: A Helm chart for Kubernetes
     digest: 0a26b1e7f4d703525ee3c54e1d8a110d2d75ba0a095b98880fe3757b8d5a39aa
@@ -122,4 +132,4 @@ entries:
     urls:
     - https://github.com/runstache/helm-charts/releases/download/rss-reader-1.0.0/rss-reader-1.0.0.tgz
     version: 1.0.0
-generated: "2022-07-07T22:06:34.165684881Z"
+generated: "2022-07-07T22:34:08.834952218Z"
