@@ -27,6 +27,7 @@ resources:
 application:
   profile: prd
   billprefix: 20210
+  pollinterval: 60000
   database:
     url: 
     platform: org.hibernate.dialect.PostgreSQLDialect
