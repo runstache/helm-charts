@@ -101,4 +101,15 @@ entries:
     urls:
     - https://github.com/runstache/helm-charts/releases/download/postgres-0.2.0/postgres-0.2.0.tgz
     version: 0.2.0
-generated: "2022-07-06T00:18:16.104622617Z"
+  rss-reader:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-07T22:01:33.162301629Z"
+    description: A Helm chart for Kubernetes
+    digest: 3e851008732e477f51dc1042dc13b3b81bc6829dc0ee0a2a68ea526604d93673
+    name: rss-reader
+    type: application
+    urls:
+    - https://github.com/runstache/helm-charts/releases/download/rss-reader-1.0.0/rss-reader-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-07-07T22:01:33.162503931Z"
