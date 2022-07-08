@@ -8,3 +8,4 @@ data:
     DB_URL: {{ .Values.application.database.url | quote }}
     ACTIVE_PROFILE: {{ .Values.application.profile | quote }}
     APP_POLL_INTERVAL: {{ .Values.application.pollinterval | quote }}
+    DB_CONNECTION_POOL: {{ .Values.application.database.connectionpool | quote }}

@@ -18,19 +18,20 @@ service:
 
 resources: 
   limits:
+    cpu: 990m
+    memory: 1Gi
+  requests:
     cpu: 500m
     memory: 500Mi
-  requests:
-    cpu: 100m
-    memory: 128Mi
 
 application:
   profile: prd
   billprefix: 20210
   pollinterval: 60000
   database:
-    url: 
+    url: jdbc:postgresql://localhost:5432/db
     platform: org.hibernate.dialect.PostgreSQLDialect
-    user:
-    password:
+    user: ""
+    password: ""
+    connectionpool: 50
   
