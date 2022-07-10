@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  bill-api:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-10T17:55:06.365653476Z"
+    description: A Helm chart for Kubernetes
+    digest: accdd8c676856beb4fbd7d7e697180b199961f87f17afa4ee460cd150a1beba6
+    name: bill-api
+    type: application
+    urls:
+    - https://github.com/runstache/helm-charts/releases/download/bill-api-0.1.0/bill-api-0.1.0.tgz
+    version: 0.1.0
   postgres:
   - apiVersion: v2
     appVersion: 1.0.1
@@ -182,4 +193,4 @@ entries:
     urls:
     - https://github.com/runstache/helm-charts/releases/download/rss-reader-1.0.0/rss-reader-1.0.0.tgz
     version: 1.0.0
-generated: "2022-07-08T13:22:33.706020582Z"
+generated: "2022-07-10T17:55:06.365700676Z"
