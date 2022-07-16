@@ -9,4 +9,4 @@ data:
     ACTIVE_PROFILE: {{ .Values.application.profile | quote }}
     APP_POLL_INTERVAL: {{ int64 .Values.application.pollinterval | quote }}
     DB_CONNECTION_POOL: {{ .Values.application.database.connectionpool | quote }}
-    DB_DDL: {{ .Values.application.database.dll | quote }}
+    DB_DDL: {{ .Values.application.database.ddl | quote }}
