@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: larrywshields/bill-api
+  repository: larrywshields/bills-api
   pullPolicy: Always
   tag: latest
 
@@ -26,7 +26,7 @@ application:
   profile: prd
 
 database:
-    url: jdbc:postgresql://jenkins-build:5432/bills_db
+    url: jdbc:postgresql://:5432/bills_db
     platform: org.hibernate.dialect.PostgreSQLDialect
     user: ""
     password: ""
