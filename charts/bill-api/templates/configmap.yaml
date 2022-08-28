@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: {{ include "bill-api.fullname" . }}
 data:
-    DB_PLATFORM: {{ .Values.application.database.platform | quote }}
-    DB_URL: {{ .Values.application.database.url | quote }}
+    DB_PLATFORM: {{ .Values.database.platform | quote }}
+    DB_URL: {{ .Values.database.url | quote }}
     ACTIVE_PROFILE: {{ .Values.application.profile | quote }}
-    DB_CONNECTION_POOL: {{ .Values.application.database.connectionpool | quote }}
+    DB_CONNECTION_POOL: {{ .Values.database.connectionpool | quote }}
