@@ -31,11 +31,13 @@ spec:
               protocol: TCP          
           livenessProbe:
             httpGet:
-              path: /
+              path: /api/schedule
               port: http
+            initialDelaySeconds: 180
           readinessProbe:
             httpGet:
-              path: /
+              path: /api/schedule
               port: http
+            initialDelaySeconds: 180
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
