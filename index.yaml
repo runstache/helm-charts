@@ -3,6 +3,16 @@ entries:
   bill-api:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-08-28T16:28:41.839094066Z"
+    description: A Helm chart for Kubernetes
+    digest: 02c037bf74a0559d79a6d8c878d02ab566e98fbf33d02d675b2823a38cfc8a88
+    name: bill-api
+    type: application
+    urls:
+    - https://github.com/runstache/helm-charts/releases/download/bill-api-0.5.0/bill-api-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-08-28T16:21:40.229446438Z"
     description: A Helm chart for Kubernetes
     digest: 7c60b87f7e719ad50f3d58b0625f0954fbd18f71fc8c4f67050a1b12d0cd44b1
@@ -263,4 +273,4 @@ entries:
     urls:
     - https://github.com/runstache/helm-charts/releases/download/rss-reader-1.0.0/rss-reader-1.0.0.tgz
     version: 1.0.0
-generated: "2022-08-28T16:21:40.229515039Z"
+generated: "2022-08-28T16:28:41.839205967Z"
