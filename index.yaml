@@ -54,6 +54,16 @@ entries:
   nfl-stats-api:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-09-06T00:39:23.884160167Z"
+    description: A Helm chart for Kubernetes
+    digest: 769e0544607d9da7314d80fd686d5e05b1cd601a526fc117372674dc8fde29a7
+    name: nfl-stats-api
+    type: application
+    urls:
+    - https://github.com/runstache/helm-charts/releases/download/nfl-stats-api-0.2.0/nfl-stats-api-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-09-06T00:35:22.731750619Z"
     description: A Helm chart for Kubernetes
     digest: 5059a1185fbf376c3f6f89ea23d6c1f9a0c4ec98b6eab4d501b66dc8fdb1b0b3
@@ -284,4 +294,4 @@ entries:
     urls:
     - https://github.com/runstache/helm-charts/releases/download/rss-reader-1.0.0/rss-reader-1.0.0.tgz
     version: 1.0.0
-generated: "2022-09-06T00:35:22.731999922Z"
+generated: "2022-09-06T00:39:23.884241268Z"
