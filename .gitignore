@@ -1,2 +1,4 @@
 .DS_Store
 deployments
+index.yaml
+*.tgz
