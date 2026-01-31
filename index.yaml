@@ -51,6 +51,17 @@ entries:
     urls:
     - https://github.com/runstache/helm-charts/releases/download/bill-api-0.1.0/bill-api-0.1.0.tgz
     version: 0.1.0
+  iceberg-catalog:
+  - apiVersion: v2
+    appVersion: 1.17.0
+    created: "2026-01-31T16:26:56.55845706Z"
+    description: A Helm chart for Kubernetes
+    digest: 2b877acb31240da29c7991d9404d105cb34f075e6ffab805b295499252af1e70
+    name: iceberg-catalog
+    type: application
+    urls:
+    - https://github.com/runstache/helm-charts/releases/download/iceberg-catalog-0.2.0/iceberg-catalog-0.2.0.tgz
+    version: 0.2.0
   nfl-stats-api:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -294,4 +305,4 @@ entries:
     urls:
     - https://github.com/runstache/helm-charts/releases/download/rss-reader-1.0.0/rss-reader-1.0.0.tgz
     version: 1.0.0
-generated: "2022-09-06T00:39:23.884241268Z"
+generated: "2026-01-31T16:26:56.558549853Z"
