@@ -1,0 +1,44 @@
+# Default values for iceberg-catalog
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 3
+
+image:
+  repository: tabulario/iceberg-rest:latest
+  pullPolicy: Always
+  tag: latest
+
+service:
+  type: NodePort
+  port: 8181
+  nodeport: 8181
+
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 768Mi
+  requests:
+    cpu: 100m
+    memory: 256Mi
+application:
+  profile: prd
+
+database:
+    url: jdbc:postgresql://postgres:5432/iceberg
+    platform: org.hibernate.dialect.PostgreSQLDialect
+    user: postgres
+    password: password
+    connectionpool: 5
+  
+
+config:
+  catalog_warehouse: s3://warehouse/
+  catalog_impl: org.apache.iceberg.aws.s3.S3FileIO
+  aws_access_key: minio
+  aws_secret_key: minio123
+  aws_region: us-east-1
+  s3_endpoint: http://minio:9000
+  s3_path_style: true
+  catalog_backend: jdbc
